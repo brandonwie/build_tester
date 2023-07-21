@@ -16,13 +16,13 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v2
         with:
-          java-version: '11'
+          java-version: '11.x'
           distribution: 'adopt'
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v1
         with:
-          flutter-version: '3' # your desired Flutter version
+          flutter-version: '3.x' # your desired Flutter version
 
       - name: Get packages
         run: flutter pub get
